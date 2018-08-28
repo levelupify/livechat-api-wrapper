@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.sublime-workspace
+npm-debug.log
+config/gcs*.json
+config/database.js
+config/production.js
+config/local.js
+*.log
