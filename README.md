@@ -15,7 +15,7 @@ Now the modules contents should automatically get updated in the external repo(s
 
 ```javascript
 const LiveChatAPIWrapper = require('livechat-api-wrapper')
-const LiveChatAPIClient = new LiveChatAPIWrapper({login: '', apiKey: ''})
+const LiveChatAPIClient = new LiveChatAPIWrapper({username: '', password: ''})
 ```
 
 ## Usage
