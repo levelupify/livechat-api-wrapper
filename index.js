@@ -130,6 +130,19 @@ class LivechatAPIClient {
 
     return this._doRequest(`greetings/${id}`, 'DELETE')
   }
+
+  /**
+   * Get chat message information
+   * @return {object}                   an object with status
+   */
+  async getChat(id) {
+    this.debug ? console.log(`getting chat information ${id}`): null
+
+    if (!id) 
+      return new Error('id missing')
+
+    return this._doRequest(`chats/${id}`, 'GET')
+  }
 }
 
 module.exports = exports = LivechatAPIClient
